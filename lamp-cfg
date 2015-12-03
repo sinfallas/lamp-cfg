@@ -1,5 +1,13 @@
 #!/bin/bash
-aptitude -q -f -y --force-yes install apache2 libapache2-mod-auth-mysql apache2-utils libxml2 libxml2-dev libxml2-utils libaprutil1 libaprutil1-dev libapache-mod-security libapache2-mod-evasive libapache2-mod-perl2 php5 php5-cgi libapache2-mod-fcgid phpmyadmin memcached php5-memcache php5-curl php5-gd php5-geoip php5-suhosin php5-cli php5-idn php5-pspell php5-snmp php5-recode php5-ming php5-imagic libapache2-mod-python php pear socket
+# Made by Sinfallas <sinfallas@yahoo.com>
+# Licence: GPL-2
+LC_ALL=C
+if [[ $USER != root ]]; then
+	echo -e "\e[00;31mERROR: must be root\e[00m"
+	exit 1
+fi
+apt update
+apt -y install apache2 libapache2-mod-auth-mysql apache2-utils libxml2 libxml2-dev libxml2-utils libaprutil1 libaprutil1-dev libapache-mod-security libapache2-mod-evasive libapache2-mod-perl2 php5 php5-cgi libapache2-mod-fcgid phpmyadmin memcached php5-memcache php5-curl php5-gd php5-geoip php5-suhosin php5-cli php5-idn php5-pspell php5-snmp php5-recode php5-ming php5-imagic libapache2-mod-python php pear socket
 a2enmod auth_mysql
 a2enmod headers
 a2enmod rewrite
@@ -49,4 +57,5 @@ apt-get install mod_ssl
 a2ensite default-ssl
 a2enmod ssl
 
-
+echo -e "\e[00;1;92mFinished...\e[00m"
+exit 0
