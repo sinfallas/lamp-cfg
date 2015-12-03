@@ -1,4 +1,17 @@
-commit ed81d1ee8820083c7d93f0734adf0ab44e38c029 (HEAD, origin/master, origin/HEAD, master)
+commit 0e9667e4355314e059c992f04dabb770f8b99316 (HEAD, origin/master, origin/HEAD, master)
+Author: jose perez <sinfallas@gmail.com>
+Date:   Wed Dec 2 21:08:55 2015 -0430
+
+    * cambio de locales
+    * comprobacion de root
+
+commit af4bc8aa8bf1821d729fd0feddd0b6c62379c338
+Author: jose perez <sinfallas@gmail.com>
+Date:   Wed Dec 2 21:02:48 2015 -0430
+
+    * changelog
+
+commit ed81d1ee8820083c7d93f0734adf0ab44e38c029
 Author: jose perez <sinfallas@gmail.com>
 Date:   Wed Dec 2 21:01:39 2015 -0430
 
