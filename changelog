@@ -1,10 +1,22 @@
-commit ff5dd2ec6e8f6f2c0e909155350a6f39dd02196a (HEAD, origin/master, origin/HEAD, master)
+commit 0bcb42b986e362d73ab58ffd559e3500d5de4878 (HEAD, origin/master, origin/HEAD, master)
+Author: jose perez <sinfallas@gmail.com>
+Date:   Mon Feb 29 21:12:27 2016 -0430
+
+    * logo licencia
+
+commit 7e2dcfb901468804573fb3084d9607386ac82eba
+Author: jose perez <sinfallas@gmail.com>
+Date:   Sat Jan 23 20:02:56 2016 -0430
+
+    * changelog
+
+commit ff5dd2ec6e8f6f2c0e909155350a6f39dd02196a
 Author: jose perez <sinfallas@gmail.com>
 Date:   Sat Jan 23 20:02:44 2016 -0430
 
     * zenodo doi
 
-commit ce24dd37935039061d773fff4d92cf3aba858555
+commit ce24dd37935039061d773fff4d92cf3aba858555 (tag: v0.1.1)
 Author: jose perez <sinfallas@gmail.com>
 Date:   Thu Dec 17 20:28:57 2015 -0430
 
