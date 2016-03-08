@@ -7,6 +7,9 @@ if [[ "$EUID" != "0" ]]; then
 	echo -e "\e[00;31mERROR: must be root\e[00m"
 	exit 1
 fi
+trap "rm -f /run/$(basename $0).pid; exit" 0 1 2 3 15
+echo "$BASHPID" > /run/$(basename $0).pid
+
 apt update
 apt -y install apache2 libapache2-mod-auth-mysql apache2-utils libxml2 libxml2-dev libxml2-utils libaprutil1 libaprutil1-dev libapache-mod-security libapache2-mod-evasive libapache2-mod-perl2 php5 php5-cgi libapache2-mod-fcgid phpmyadmin memcached php5-memcache php5-curl php5-gd php5-geoip php5-suhosin php5-cli php5-idn php5-pspell php5-snmp php5-recode php5-ming php5-imagic libapache2-mod-python php pear socket
 a2enmod auth_mysql
@@ -59,4 +62,5 @@ a2ensite default-ssl
 a2enmod ssl
 
 echo -e "\e[00;1;92mFinished...\e[00m"
+rm -f /run/$(basename $0).pid
 exit 0
