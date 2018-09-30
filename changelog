@@ -1,4 +1,10 @@
-commit c1871521c25d950af6b4f1979732d1bd149c514b (HEAD, origin/master, origin/HEAD, master)
+commit 68142646cb88b4993ed371b9de0c56377411cf38 (HEAD -> master, tag: v0.1.2, origin/master, origin/HEAD)
+Author: jose perez <sinfallas@gmail.com>
+Date:   Tue Mar 8 13:05:52 2016 -0430
+
+    * changelog
+
+commit c1871521c25d950af6b4f1979732d1bd149c514b
 Author: jose perez <sinfallas@gmail.com>
 Date:   Tue Mar 8 13:05:31 2016 -0430
 
